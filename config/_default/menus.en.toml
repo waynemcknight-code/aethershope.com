@@ -4,16 +4,26 @@
   weight = 10
 
 [[main]]
+  name = "Position"
+  pageRef = "position"
+  weight = 20
+
+[[main]]
   name = "The Fleet"
   pageRef = "fleet"
-  weight = 20
+  weight = 30
+
+[[main]]
+  name = "Ranks"
+  pageRef = "ranks"
+  weight = 40
 
 [[main]]
   name = "The Carrier"
   pageRef = "carrier"
-  weight = 30
+  weight = 50
 
 [[main]]
   name = "About"
   pageRef = "about"
-  weight = 40
+  weight = 60
