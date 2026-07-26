@@ -1,0 +1,48 @@
+{
+ "carrier": {
+  "accuracy_ly": 10,
+  "callsign": "G0N-GKG",
+  "confirmed_at": "2026-08-01T02:06:23Z",
+  "coords": [
+   1465,
+   105,
+   5465
+  ],
+  "distance_ly": 8,
+  "fuel_t": 755,
+  "jump": null,
+  "name": "Aether's Hope",
+  "system": "Syralia YO-Q b5-6"
+ },
+ "commander": "Aiether",
+ "generated": "2026-08-08T13:53:36Z",
+ "landmarks": {
+  "Beagle Point": 59868,
+  "Colonia": 18106,
+  "Sagittarius A*": 20493,
+  "Sol": 5652
+ },
+ "online": false,
+ "position": {
+  "body": "Syralia YO-Q b5-6 A",
+  "coords": [
+   1463.91,
+   101.0,
+   5457.78
+  ],
+  "docked_at": "G0N-GKG",
+  "jumps_session": 0,
+  "system": "Syralia YO-Q b5-6"
+ },
+ "schema": 1,
+ "ship": {
+  "flight_state": "Normal space",
+  "fuel_capacity_t": 128.0,
+  "fuel_t": null,
+  "hull_pct": 100,
+  "ident": "V1",
+  "jump_range_ly": 74.25,
+  "name": "Voyager 1",
+  "type": "Caspian Explorer"
+ }
+}
