@@ -1,7 +1,6 @@
 <div id="ed-live" class="ed-live" data-src="https://raw.githubusercontent.com/waynemcknight-code/aethershope.com/live/live.json">
   <div class="ed-live-head">
-    <span class="ed-dot" id="ed-dot"></span>
-    <span id="ed-state">CONNECTING…</span>
+    <span id="ed-state">FLIGHT DATA</span>
     <span class="ed-stamp" id="ed-stamp"></span>
   </div>
   <div class="ed-grid" id="ed-grid"></div>
@@ -24,11 +23,6 @@
   padding-bottom:.5rem;margin-bottom:.75rem}
 .ed-stamp{margin-left:auto;color:rgba(230,213,196,.45);font-size:.68rem;
   letter-spacing:.06em;font-family:'JetBrains Mono',monospace}
-.ed-dot{width:9px;height:9px;border-radius:50%;background:#666;flex:none}
-.ed-dot.on{background:#7CFF6B;box-shadow:0 0 10px #7CFF6B;
-  animation:edpulse 2s ease-in-out infinite}
-.ed-dot.off{background:#ff3b3b;box-shadow:0 0 10px #ff3b3b}
-@keyframes edpulse{0%,100%{opacity:1}50%{opacity:.35}}
 .ed-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));
   gap:.55rem 1.2rem}
 .ed-cell{min-width:0}
@@ -67,10 +61,8 @@
 
   function render() {
     if (!data) return;
-    var on = !!data.online;
-    document.getElementById('ed-dot').className = 'ed-dot ' + (on ? 'on' : 'off');
     document.getElementById('ed-state').textContent =
-      on ? 'CMDR ' + (data.commander || '') + ' — IN FLIGHT' : 'OFFLINE';
+      data.commander ? 'CMDR ' + data.commander : 'FLIGHT DATA';
     document.getElementById('ed-stamp').textContent =
       'feed ' + (data.generated || '');
 
@@ -138,7 +130,6 @@
       .then(function (j) { if (j) { data = j; render(); } })
       .catch(function () {
         document.getElementById('ed-state').textContent = 'FEED UNAVAILABLE';
-        document.getElementById('ed-dot').className = 'ed-dot off';
       });
   }
 
