@@ -9,21 +9,26 @@
   weight = 20
 
 [[main]]
-  name = "The Fleet"
+  name = "Fleet"
   pageRef = "fleet"
   weight = 30
 
 [[main]]
-  name = "Ranks"
-  pageRef = "ranks"
+  name = "Buildouts"
+  pageRef = "loadouts"
   weight = 40
 
 [[main]]
-  name = "The Carrier"
-  pageRef = "carrier"
+  name = "Ranks"
+  pageRef = "ranks"
   weight = 50
+
+[[main]]
+  name = "Carrier"
+  pageRef = "carrier"
+  weight = 60
 
 [[main]]
   name = "About"
   pageRef = "about"
-  weight = 60
+  weight = 70
