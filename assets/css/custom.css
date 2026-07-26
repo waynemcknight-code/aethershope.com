@@ -120,6 +120,16 @@ h2::after {
 
 p, li, td, dd, .prose, .prose p, .prose li { color: var(--ed-text) !important; }
 
+/* Congo's Tailwind prose styles bold text with a light-theme colour, which
+   renders near-black on this background. Without this, every **bold** run -
+   including the whole left column of the landmark tables - is invisible. */
+strong, b, .prose strong, .prose b, th strong, td strong {
+  color: #ffffff !important;
+  font-weight: 700;
+}
+
+em, i, .prose em { color: var(--ed-amber) !important; }
+
 a, .prose a {
   color: var(--ed-cyan) !important;
   text-decoration: none;
