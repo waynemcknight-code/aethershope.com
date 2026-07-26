@@ -136,11 +136,6 @@ def main():
         'date: %s' % datetime.date.today().isoformat(),
         '---',
         '',
-        '{{< alert >}}',
-        'Generated from the game journal by `tools/build_roster.py`. '
-        'Ship storage reflects the last shipyard snapshot (%s).' % ts,
-        '{{< /alert >}}',
-        '',
         '## Registered hulls',
         '',
         '| Ship | Name | Jump range | Value | Location |',

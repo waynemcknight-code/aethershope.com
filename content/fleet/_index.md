@@ -4,10 +4,6 @@ description: "Ships registered to CMDR Aiether."
 date: 2026-07-26
 ---
 
-{{< alert >}}
-Generated from the game journal by `tools/build_roster.py`. Ship storage reflects the last shipyard snapshot (2026-07-26T16:26:36Z).
-{{< /alert >}}
-
 ## Registered hulls
 
 | Ship | Name | Jump range | Value | Location |
@@ -29,6 +25,6 @@ Generated from the game journal by `tools/build_roster.py`. Ship storage reflect
 
 | | |
 |---|---|
-| Tritium | 190 t |
+| Tritium | 865 t |
 | Jump range | ~500 ly |
-| Balance | 4,574,911,305 CR |
+| Balance | 4,576,922,265 CR |

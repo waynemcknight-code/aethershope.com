@@ -108,11 +108,6 @@ def main():
         'date: %s' % datetime.date.today().isoformat(),
         '---',
         '',
-        '{{< alert >}}',
-        'Generated from the game journal by `tools/build_ranks.py`. '
-        'Last rank update recorded %s.' % rank.get('timestamp', '?'),
-        '{{< /alert >}}',
-        '',
         '## Pilots Federation',
         '',
         '| Branch | Rank | Tier | Progress | |',

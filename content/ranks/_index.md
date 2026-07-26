@@ -4,10 +4,6 @@ description: "Pilots Federation and superpower ranks for CMDR Aiether."
 date: 2026-07-26
 ---
 
-{{< alert >}}
-Generated from the game journal by `tools/build_ranks.py`. Last rank update recorded 2026-07-26T20:10:11Z.
-{{< /alert >}}
-
 ## Pilots Federation
 
 | Branch | Rank | Tier | Progress | |
