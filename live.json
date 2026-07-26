@@ -1,0 +1,53 @@
+{
+ "carrier": {
+  "accuracy_ly": 10,
+  "callsign": "G0N-GKG",
+  "confirmed_at": "2026-10-31T20:56:17Z",
+  "coords": [
+   845,
+   165,
+   10465
+  ],
+  "distance_ly": 12,
+  "fuel_t": 787,
+  "jump": {
+   "departure": "2026-10-31T21:26:10Z",
+   "requested_at": "2026-10-31T21:10:57Z",
+   "target": "Eodgols XM-J b23-3",
+   "target_distance_ly": 503
+  },
+  "name": "Aether's Hope",
+  "system": "Eodgols BU-B b9"
+ },
+ "commander": "Aiether",
+ "generated": "2026-10-31T21:12:40Z",
+ "landmarks": {
+  "Beagle Point": 54842,
+  "Colonia": 13999,
+  "Sagittarius A*": 15459,
+  "Sol": 10498
+ },
+ "online": true,
+ "position": {
+  "body": "Eodgols BU-B b9 A",
+  "coords": [
+   839.03,
+   155.03,
+   10463.66
+  ],
+  "docked_at": "G0N-GKG",
+  "jumps_session": 0,
+  "system": "Eodgols BU-B b9"
+ },
+ "schema": 1,
+ "ship": {
+  "flight_state": "Docked",
+  "fuel_capacity_t": 128.0,
+  "fuel_t": 128.0,
+  "hull_pct": 100,
+  "ident": "ZM-II",
+  "jump_range_ly": 37.45,
+  "name": "Zeus MK II",
+  "type": "Panther Clipper Mk II"
+ }
+}
