@@ -1,0 +1,10 @@
+* text=auto
+
+# GitHub Pages reads this file literally -- a trailing CR breaks the custom
+# domain in ways that are tedious to diagnose. Force LF regardless of host.
+static/CNAME text eol=lf
+
+# Keep shell/YAML LF so anything running on the Actions runner behaves.
+*.sh text eol=lf
+*.yml text eol=lf
+*.yaml text eol=lf
