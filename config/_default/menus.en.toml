@@ -1,0 +1,14 @@
+[[main]]
+  name = "Logs"
+  pageRef = "posts"
+  weight = 10
+
+[[main]]
+  name = "The Carrier"
+  pageRef = "carrier"
+  weight = 20
+
+[[main]]
+  name = "About"
+  pageRef = "about"
+  weight = 30

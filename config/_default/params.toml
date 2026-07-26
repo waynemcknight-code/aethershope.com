@@ -1,0 +1,33 @@
+colorScheme = "slate"
+
+[author]
+  name = "CMDR Aiether"
+  headline = "Fleet Carrier G0N-GKG - Aether's Hope"
+  bio = "Exploration, trade and deep-space operations in Elite Dangerous."
+  links = [
+    { github = "https://github.com/waynemcknight-code" }
+  ]
+
+defaultAppearance = "dark"
+autoSwitchAppearance = false
+
+homepage.layout = "page"
+homepage.showRecent = true
+homepage.recentLimit = 6
+
+article.showDate = true
+article.showAuthor = false
+article.showBreadcrumbs = true
+article.showReadingTime = true
+article.showTableOfContents = true
+
+list.showBreadcrumbs = true
+
+header.layout = "basic"
+footer.showCopyright = true
+footer.showThemeAttribution = false
+footer.showScrollToTop = true
+
+[sitemap]
+  changefreq = "weekly"
+  priority = 0.5

@@ -1,0 +1,16 @@
+baseURL = 'https://aethershope.com/'
+locale = 'en'
+title = "Aether's Hope"
+theme = 'congo'
+defaultContentLanguage = 'en'
+enableRobotsTXT = true
+paginate = 10
+
+[taxonomies]
+  category = 'categories'
+  tag = 'tags'
+
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true

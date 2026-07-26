@@ -1,0 +1,6 @@
+label = 'English'
+direction = 'ltr'
+weight = 1
+
+[params]
+  displayName = 'EN'
