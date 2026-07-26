@@ -1,0 +1,147 @@
+<div id="ed-live" class="ed-live" data-src="https://raw.githubusercontent.com/waynemcknight-code/aethershope.com/live/live.json">
+  <div class="ed-live-head">
+    <span class="ed-dot" id="ed-dot"></span>
+    <span id="ed-state">CONNECTING…</span>
+    <span class="ed-stamp" id="ed-stamp"></span>
+  </div>
+  <div class="ed-grid" id="ed-grid"></div>
+  <div class="ed-jump" id="ed-jump" hidden>
+    <div class="ed-jump-label">CARRIER JUMP SEQUENCE</div>
+    <div class="ed-jump-target" id="ed-jump-target"></div>
+    <div class="ed-count" id="ed-count">--:--</div>
+    <div class="ed-bar"><i id="ed-bar-fill"></i></div>
+  </div>
+</div>
+
+<style>
+.ed-live{border:1px solid rgba(255,113,0,.35);background:rgba(8,8,11,.85);
+  padding:1rem 1.15rem;margin:1.5rem 0;border-radius:2px;
+  box-shadow:0 0 24px rgba(255,113,0,.12), inset 0 0 50px rgba(255,113,0,.03);
+  font-family:'Rajdhani',sans-serif}
+.ed-live-head{display:flex;align-items:center;gap:.6rem;
+  font-family:'Orbitron',sans-serif;font-size:.82rem;letter-spacing:.14em;
+  color:#ff7100;text-transform:uppercase;border-bottom:1px solid rgba(255,113,0,.2);
+  padding-bottom:.5rem;margin-bottom:.75rem}
+.ed-stamp{margin-left:auto;color:rgba(230,213,196,.45);font-size:.68rem;
+  letter-spacing:.06em;font-family:'JetBrains Mono',monospace}
+.ed-dot{width:9px;height:9px;border-radius:50%;background:#666;flex:none}
+.ed-dot.on{background:#7CFF6B;box-shadow:0 0 10px #7CFF6B;
+  animation:edpulse 2s ease-in-out infinite}
+.ed-dot.off{background:#ff3b3b;box-shadow:0 0 10px #ff3b3b}
+@keyframes edpulse{0%,100%{opacity:1}50%{opacity:.35}}
+.ed-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));
+  gap:.55rem 1.2rem}
+.ed-cell{min-width:0}
+.ed-k{display:block;font-size:.64rem;letter-spacing:.14em;text-transform:uppercase;
+  color:rgba(255,176,0,.65);font-family:'Orbitron',sans-serif}
+.ed-v{display:block;font-size:1.02rem;color:#e6d5c4;font-weight:600;
+  overflow-wrap:anywhere}
+.ed-v small{color:rgba(230,213,196,.5);font-weight:400}
+.ed-jump{margin-top:.9rem;padding-top:.75rem;border-top:1px solid rgba(255,113,0,.2)}
+.ed-jump-label{font-family:'Orbitron',sans-serif;font-size:.64rem;
+  letter-spacing:.16em;color:#ffb000}
+.ed-jump-target{color:#7fe0ff;font-size:1.05rem;font-weight:600;margin:.15rem 0 .3rem}
+.ed-count{font-family:'JetBrains Mono',monospace;font-size:2rem;color:#ff7100;
+  text-shadow:0 0 14px rgba(255,113,0,.6);line-height:1.1}
+.ed-bar{height:3px;background:rgba(255,113,0,.15);margin-top:.5rem;overflow:hidden}
+.ed-bar i{display:block;height:100%;width:0;background:#ff7100;
+  box-shadow:0 0 8px #ff7100;transition:width 1s linear}
+@media (prefers-reduced-motion:reduce){.ed-dot.on{animation:none}}
+</style>
+
+<script>
+(function () {
+  var root = document.getElementById('ed-live');
+  var SRC = root.getAttribute('data-src');
+  var data = null, departAt = null, requestAt = null;
+
+  function cell(k, v) {
+    if (v === null || v === undefined || v === '') return '';
+    return '<div class="ed-cell"><span class="ed-k">' + k +
+           '</span><span class="ed-v">' + v + '</span></div>';
+  }
+
+  function num(n) {
+    return n === null || n === undefined ? null : n.toLocaleString();
+  }
+
+  function render() {
+    if (!data) return;
+    var on = !!data.online;
+    document.getElementById('ed-dot').className = 'ed-dot ' + (on ? 'on' : 'off');
+    document.getElementById('ed-state').textContent =
+      on ? 'CMDR ' + (data.commander || '') + ' — IN FLIGHT' : 'OFFLINE';
+    document.getElementById('ed-stamp').textContent =
+      'feed ' + (data.generated || '');
+
+    var s = data.ship || {}, p = data.position || {}, c = data.carrier || {};
+    var fuel = s.fuel_t !== null && s.fuel_capacity_t
+      ? s.fuel_t + ' t <small>/ ' + s.fuel_capacity_t + '</small>' : null;
+
+    document.getElementById('ed-grid').innerHTML =
+      cell('Ship', s.type) +
+      cell('Status', s.flight_state) +
+      cell('System', p.system) +
+      cell('Fuel', fuel) +
+      cell('Jump range', s.jump_range_ly ? s.jump_range_ly + ' ly' : null) +
+      cell('Hull', s.hull_pct !== null ? s.hull_pct + '%' : null) +
+      cell('Carrier', c.system) +
+      cell('Range to carrier', c.distance_ly !== null ? num(c.distance_ly) + ' ly' : null) +
+      cell('Sol', num((data.landmarks || {})['Sol']) + ' ly') +
+      cell('Colonia', num((data.landmarks || {})['Colonia']) + ' ly') +
+      cell('Sagittarius A*', num((data.landmarks || {})['Sagittarius A*']) + ' ly') +
+      cell('Beagle Point', num((data.landmarks || {})['Beagle Point']) + ' ly');
+
+    var box = document.getElementById('ed-jump');
+    var j = c.jump;
+    if (j && j.departure) {
+      departAt = Date.parse(j.departure);
+      requestAt = j.requested_at ? Date.parse(j.requested_at) : null;
+      document.getElementById('ed-jump-target').textContent =
+        j.target + (j.target_distance_ly !== null && j.target_distance_ly !== undefined
+          ? '  —  closes to ' + num(j.target_distance_ly) + ' ly' : '');
+      box.hidden = false;
+    } else {
+      departAt = null;
+      box.hidden = true;
+    }
+    tick();
+  }
+
+  // The countdown runs locally off DepartureTime, which the game reports
+  // exactly. So the timer stays truthful even when the feed behind it is
+  // several minutes stale.
+  function tick() {
+    if (!departAt) return;
+    var left = Math.floor((departAt - Date.now()) / 1000);
+    var el = document.getElementById('ed-count');
+    if (left <= 0) {
+      el.textContent = 'JUMPING';
+      document.getElementById('ed-bar-fill').style.width = '100%';
+      return;
+    }
+    var m = Math.floor(left / 60), s = left % 60;
+    el.textContent = m + ':' + (s < 10 ? '0' : '') + s;
+    if (requestAt) {
+      var total = departAt - requestAt;
+      var done = Date.now() - requestAt;
+      var pct = Math.max(0, Math.min(100, done / total * 100));
+      document.getElementById('ed-bar-fill').style.width = pct + '%';
+    }
+  }
+
+  function load() {
+    fetch(SRC + '?t=' + Date.now(), { cache: 'no-store' })
+      .then(function (r) { return r.ok ? r.json() : null; })
+      .then(function (j) { if (j) { data = j; render(); } })
+      .catch(function () {
+        document.getElementById('ed-state').textContent = 'FEED UNAVAILABLE';
+        document.getElementById('ed-dot').className = 'ed-dot off';
+      });
+  }
+
+  load();
+  setInterval(load, 60000);
+  setInterval(tick, 1000);
+})();
+</script>
