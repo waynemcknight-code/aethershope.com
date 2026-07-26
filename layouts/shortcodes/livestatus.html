@@ -87,6 +87,8 @@
       cell('Hull', s.hull_pct !== null ? s.hull_pct + '%' : null) +
       cell('Carrier', c.system) +
       cell('Range to carrier', c.distance_ly !== null ? num(c.distance_ly) + ' ly' : null) +
+      cell('Tritium', c.fuel_t !== null && c.fuel_t !== undefined
+        ? num(c.fuel_t) + ' t' : null) +
       cell('Sol', num((data.landmarks || {})['Sol']) + ' ly') +
       cell('Colonia', num((data.landmarks || {})['Colonia']) + ' ly') +
       cell('Sagittarius A*', num((data.landmarks || {})['Sagittarius A*']) + ' ly') +
