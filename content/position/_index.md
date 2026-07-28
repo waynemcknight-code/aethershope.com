@@ -1,7 +1,7 @@
 ---
 title: "Position"
 description: "Where CMDR Aiether is in the galaxy right now."
-date: 2026-07-26
+date: 2026-07-28
 ---
 
 <svg viewBox="0 0 1000 1000" xmlns="http://www.w3.org/2000/svg" style="width:100%;height:auto;display:block;background:#02020a;border:1px solid rgba(255,113,0,.3)" role="img" aria-label="Top-down map of the Milky Way showing current position relative to Sol, Colonia, Sagittarius A star and Beagle Point">
