@@ -1,7 +1,7 @@
 ---
 title: "The Fleet"
 description: "Ships registered to CMDR Aiether."
-date: 2026-07-28
+date: 2026-07-29
 ---
 
 ## Registered hulls
