@@ -1,7 +1,7 @@
 ---
 title: "Buildouts"
 description: "Module loadouts for every ship in the fleet."
-date: 2026-07-29
+date: 2026-07-31
 ---
 
 *A buildout is only recorded once a ship has been flown, so hulls that have sat in storage appear on [the fleet roster](/fleet/) but not here.*
