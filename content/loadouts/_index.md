@@ -6,48 +6,9 @@ date: 2026-10-26
 
 *A buildout is only recorded once a ship has been flown, so hulls that have sat in storage appear on [the fleet roster](/fleet/) but not here.*
 
-## Mandalay &mdash; *starship 1*
-
-ID `ss-1` &middot; max jump **76.44 ly** &middot; unladen **326.2 t** &middot; cargo **4 t** &middot; value **12,194,326 CR** &middot; rebuy **609,716 CR**
-
-### Core internals
-
-| Slot | Module | Pwr | Engineering |
-|---|---|---|---|
-| `Armour` | Mandalay Armour Grade1 | on/1 | &mdash; |
-| `PowerPlant` | Power Plant [5A] | on/1 | PowerPlant Stealth G3 + *Monstered* |
-| `MainEngines` | Thrusters [5A] | on/0 | Engine Tuned G1 |
-| `FrameShiftDrive` | Frame Shift Drive Overcharge [5A] | on/0 | FSD LongRange G5 + *Mass Manager* |
-| `LifeSupport` | Life Support [4D] | on/0 | &mdash; |
-| `PowerDistributor` | Power Distributor [4D] | on/0 | &mdash; |
-| `Radar` | Sensors [5D] | on/1 | &mdash; |
-| `FuelTank` | Fuel Tank [5C] | on/1 | &mdash; |
-
-### Utility mounts
-
-| Slot | Module | Pwr | Engineering |
-|---|---|---|---|
-| `TinyHardpoint1` | Heat Sink Launcher [Tiny, Turret] | off/4 | &mdash; |
-| `TinyHardpoint2` | Heat Sink Launcher [Tiny, Turret] | off/4 | &mdash; |
-
-### Optional internals
-
-| Slot | Module | Pwr | Engineering |
-|---|---|---|---|
-| `Slot01_Size6` | Fuel Scoop [6A] | on/1 | &mdash; |
-| `Slot02_Size5` | Guardian FSD Booster | on/0 | &mdash; |
-| `Slot03_Size4` | Planetary Vehicle Hangar [4D] | on/1 | &mdash; |
-| `Slot04_Size4` | AFM Unit [4B] | off/4 | &mdash; |
-| `Slot05_Size3` | Shield Generator Strong [3A] | on/0 | ShieldGenerator Optimised G3 + *Stripped Down* |
-| `Slot06_Size3` | Repair Limpet Controller [3D] | off/4 | &mdash; |
-| `Slot07_Size2` | Cargo Rack [2E] | on/1 | &mdash; |
-| `Slot08_Size1` | Advanced Docking Computer | on/1 | &mdash; |
-| `Slot09_Size1` | Supercruise Assist | on/1 | &mdash; |
-| `Slot10_Size1` | Detailed Surface Scanner [Tiny] | on/0 | &mdash; |
-
 ## Caspian Explorer &mdash; *Voyager 1*
 
-ID `V1` &middot; max jump **74.25 ly** &middot; unladen **1533.2 t** &middot; cargo **4 t** &middot; value **56,630,853 CR** &middot; rebuy **2,831,544 CR**
+ID `V1` &middot; max jump **79.89 ly** &middot; unladen **1408.2 t** &middot; cargo **4 t** &middot; value **56,630,853 CR** &middot; rebuy **2,831,544 CR**
 
 ### Core internals
 
@@ -86,6 +47,45 @@ ID `V1` &middot; max jump **74.25 ly** &middot; unladen **1533.2 t** &middot; ca
 | `Slot12_Size1` | Detailed Surface Scanner [Tiny] | on/0 | Sensor Expanded G4 |
 | `Slot13_Size1` | Supercruise Assist | on/2 | &mdash; |
 | `Slot14_Size1` | Advanced Docking Computer | on/4 | &mdash; |
+
+## Mandalay &mdash; *starship 1*
+
+ID `ss-1` &middot; max jump **76.44 ly** &middot; unladen **326.2 t** &middot; cargo **4 t** &middot; value **12,194,326 CR** &middot; rebuy **609,716 CR**
+
+### Core internals
+
+| Slot | Module | Pwr | Engineering |
+|---|---|---|---|
+| `Armour` | Mandalay Armour Grade1 | on/1 | &mdash; |
+| `PowerPlant` | Power Plant [5A] | on/1 | PowerPlant Stealth G3 + *Monstered* |
+| `MainEngines` | Thrusters [5A] | on/0 | Engine Tuned G1 |
+| `FrameShiftDrive` | Frame Shift Drive Overcharge [5A] | on/0 | FSD LongRange G5 + *Mass Manager* |
+| `LifeSupport` | Life Support [4D] | on/0 | &mdash; |
+| `PowerDistributor` | Power Distributor [4D] | on/0 | &mdash; |
+| `Radar` | Sensors [5D] | on/1 | &mdash; |
+| `FuelTank` | Fuel Tank [5C] | on/1 | &mdash; |
+
+### Utility mounts
+
+| Slot | Module | Pwr | Engineering |
+|---|---|---|---|
+| `TinyHardpoint1` | Heat Sink Launcher [Tiny, Turret] | off/4 | &mdash; |
+| `TinyHardpoint2` | Heat Sink Launcher [Tiny, Turret] | off/4 | &mdash; |
+
+### Optional internals
+
+| Slot | Module | Pwr | Engineering |
+|---|---|---|---|
+| `Slot01_Size6` | Fuel Scoop [6A] | on/1 | &mdash; |
+| `Slot02_Size5` | Guardian FSD Booster | on/0 | &mdash; |
+| `Slot03_Size4` | Planetary Vehicle Hangar [4D] | on/1 | &mdash; |
+| `Slot04_Size4` | AFM Unit [4B] | off/4 | &mdash; |
+| `Slot05_Size3` | Shield Generator Strong [3A] | on/0 | ShieldGenerator Optimised G3 + *Stripped Down* |
+| `Slot06_Size3` | Repair Limpet Controller [3D] | off/4 | &mdash; |
+| `Slot07_Size2` | Cargo Rack [2E] | on/1 | &mdash; |
+| `Slot08_Size1` | Advanced Docking Computer | on/1 | &mdash; |
+| `Slot09_Size1` | Supercruise Assist | on/1 | &mdash; |
+| `Slot10_Size1` | Detailed Surface Scanner [Tiny] | on/0 | &mdash; |
 
 ## Panther Clipper Mk II &mdash; *Zeus MK II*
 
