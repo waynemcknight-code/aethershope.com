@@ -8,16 +8,16 @@ date: 2026-10-26
 
 | Ship | Name | Jump range | Value | Location |
 |---|---|---|---|---|
-| **Caspian Explorer** | Voyager 1 | 79.89 ly | 50,967,767 CR | Aboard G0N-GKG |
+| **Caspian Explorer** | Voyager 1 | 79.89 ly | -- | In service |
 | **Mandalay** | starship 1 | 76.44 ly | 10,974,893 CR | Aboard G0N-GKG |
-| **Panther Clipper Mk II** | Zeus MK II | 37.45 ly | -- | In service |
+| **Panther Clipper Mk II** | Zeus MK II | 37.45 ly | 7,041,159 CR | Aboard G0N-GKG |
 | **Federal Corvette** | *unnamed* | 26.01 ly | 723,825,047 CR | Aboard G0N-GKG |
 | **Type-11 Prospector** | Crunchy | 23.47 ly | 7,202 CR | Aboard G0N-GKG |
 | **Corsair** | *unnamed* | -- | -- | Aboard G0N-GKG |
 | **Cobra Mk V** | *unnamed* | -- | -- | Aboard G0N-GKG |
 | **Asp Explorer** | *unnamed* | -- | -- | Aboard G0N-GKG |
 
-**8 hulls**, combined recorded value **785,774,909 CR**.
+**8 hulls**, combined recorded value **741,848,301 CR**.
 
 ## Fleet Carrier
 
@@ -25,6 +25,6 @@ date: 2026-10-26
 
 | | |
 |---|---|
-| Tritium | 645 t |
+| Tritium | 533 t |
 | Jump range | ~500 ly |
 | Balance | 4,212,274,924 CR |
