@@ -26,7 +26,7 @@ date: 2026-10-28
 <text x="503" y="142.8" fill="rgba(255,176,0,.35)" font-size="9" font-family="JetBrains Mono,monospace">40k ly</text>
 <circle cx="500" cy="500" r="442.8" fill="none" stroke="rgba(255,113,0,.13)" stroke-dasharray="3 7"/>
 <text x="503" y="54.2" fill="rgba(255,176,0,.35)" font-size="9" font-family="JetBrains Mono,monospace">50k ly</text>
-<line x1="508.4" y1="663.2" x2="508.3" y2="663.1" stroke="#ff7100" stroke-width="1.4" stroke-dasharray="5 4" opacity=".8"/>
+<line x1="508.4" y1="663.2" x2="508.1" y2="658.8" stroke="#ff7100" stroke-width="1.4" stroke-dasharray="5 4" opacity=".8"/>
 <circle cx="499.8" cy="729.4" r="4.5" fill="#7fe0ff" filter="url(#glow)"/>
 <text x="510.8" y="733.4" fill="#7fe0ff" font-size="13" font-family="Orbitron,sans-serif" text-anchor="start" letter-spacing="1" style="paint-order:stroke;stroke:#02020a;stroke-width:3px">Sol</text>
 <circle cx="415.4" cy="553.9" r="4.5" fill="#ffb000" filter="url(#glow)"/>
@@ -39,18 +39,18 @@ date: 2026-10-28
 <circle cx="508.4" cy="663.2" r="8" fill="none" stroke="#ff7100" stroke-width="1.2" opacity=".7"><animate attributeName="r" values="7;20;7" dur="3s" repeatCount="indefinite"/><animate attributeName="opacity" values=".7;0;.7" dur="3s" repeatCount="indefinite"/></circle>
 <line x1="508.4" y1="663.2" x2="516.1" y2="644.2" stroke="#ff7100" stroke-width=".8" opacity=".55"/>
 <text x="519.4" y="651.2" fill="#ff7100" font-size="13" font-family="Orbitron,sans-serif" text-anchor="start" letter-spacing="1" style="paint-order:stroke;stroke:#02020a;stroke-width:3px">Your ship</text>
-<circle cx="508.3" cy="663.1" r="6.0" fill="#7CFF6B" filter="url(#glow)"/>
-<circle cx="508.3" cy="663.1" r="8" fill="none" stroke="#7CFF6B" stroke-width="1.2" opacity=".7"><animate attributeName="r" values="7;20;7" dur="3s" repeatCount="indefinite"/><animate attributeName="opacity" values=".7;0;.7" dur="3s" repeatCount="indefinite"/></circle>
-<line x1="508.3" y1="663.1" x2="516.0" y2="684.1" stroke="#7CFF6B" stroke-width=".8" opacity=".55"/>
-<text x="519.3" y="685.1" fill="#7CFF6B" font-size="13" font-family="Orbitron,sans-serif" text-anchor="start" letter-spacing="1" style="paint-order:stroke;stroke:#02020a;stroke-width:3px">Aether's Hope</text>
+<circle cx="508.1" cy="658.8" r="6.0" fill="#7CFF6B" filter="url(#glow)"/>
+<circle cx="508.1" cy="658.8" r="8" fill="none" stroke="#7CFF6B" stroke-width="1.2" opacity=".7"><animate attributeName="r" values="7;20;7" dur="3s" repeatCount="indefinite"/><animate attributeName="opacity" values=".7;0;.7" dur="3s" repeatCount="indefinite"/></circle>
+<line x1="508.1" y1="658.8" x2="515.8" y2="679.8" stroke="#7CFF6B" stroke-width=".8" opacity=".55"/>
+<text x="519.1" y="680.8" fill="#7CFF6B" font-size="13" font-family="Orbitron,sans-serif" text-anchor="start" letter-spacing="1" style="paint-order:stroke;stroke:#02020a;stroke-width:3px">Aether's Hope</text>
 <rect x="706" y="706" width="268" height="268" fill="#04040c" fill-opacity=".92" stroke="rgba(255,113,0,.45)"/>
 <text x="716" y="724" fill="#ffb000" font-size="10" font-family="Orbitron,sans-serif" letter-spacing="2">LOCAL DETAIL</text>
-<line x1="867.5" y1="896.0" x2="812.5" y2="800.0" stroke="#ff7100" stroke-width="1.2" stroke-dasharray="4 3" opacity=".85"/>
-<circle cx="867.5" cy="896.0" r="5" fill="#ff7100" filter="url(#glow)"/>
-<circle cx="812.5" cy="800.0" r="5" fill="#7CFF6B" filter="url(#glow)"/>
-<text x="867.5" y="885.0" fill="#ff7100" font-size="11" font-family="Orbitron,sans-serif" text-anchor="middle">YOU</text>
-<text x="812.5" y="820.0" fill="#7CFF6B" font-size="11" font-family="Orbitron,sans-serif" text-anchor="middle">CARRIER</text>
-<text x="840" y="960" fill="#e6d5c4" font-size="14" font-family="JetBrains Mono,monospace" text-anchor="middle">15 ly apart</text>
+<line x1="843.8" y1="921.5" x2="836.2" y2="774.5" stroke="#ff7100" stroke-width="1.2" stroke-dasharray="4 3" opacity=".85"/>
+<circle cx="843.8" cy="921.5" r="5" fill="#ff7100" filter="url(#glow)"/>
+<circle cx="836.2" cy="774.5" r="5" fill="#7CFF6B" filter="url(#glow)"/>
+<text x="843.8" y="910.5" fill="#ff7100" font-size="11" font-family="Orbitron,sans-serif" text-anchor="middle">YOU</text>
+<text x="836.2" y="794.5" fill="#7CFF6B" font-size="11" font-family="Orbitron,sans-serif" text-anchor="middle">CARRIER</text>
+<text x="840" y="960" fill="#e6d5c4" font-size="14" font-family="JetBrains Mono,monospace" text-anchor="middle">491 ly apart</text>
 <text x="14" y="986" fill="rgba(230,213,196,.4)" font-size="10" font-family="JetBrains Mono,monospace">top-down galactic plane (X / Z) &#183; centred on Sgr A* &#183; rings measured from the core</text>
 </svg>
 
@@ -69,6 +69,6 @@ date: 2026-10-28
 
 ## Fleet carrier
 
-**Aether's Hope** was last confirmed in **Lysoorb ZT-D b40-3**, **15 ly** away.
+**Aether's Hope** was last confirmed in **Prieluia YX-V b2-0**, **491 ly** away.
 
 Carrier position only updates when the game reports it &mdash; on load, when docking there, or when a jump completes while aboard &mdash; so it can lag reality while flying elsewhere.
