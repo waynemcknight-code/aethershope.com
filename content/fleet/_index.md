@@ -1,7 +1,7 @@
 ---
 title: "The Fleet"
 description: "Ships registered to CMDR Aiether."
-date: 2026-10-29
+date: 2026-10-31
 ---
 
 ## Registered hulls
@@ -27,4 +27,4 @@ date: 2026-10-29
 |---|---|
 | Tritium | 893 t |
 | Jump range | ~500 ly |
-| Balance | 4,212,274,924 CR |
+| Balance | 4,183,124,924 CR |
