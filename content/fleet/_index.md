@@ -25,6 +25,6 @@ date: 2026-11-01
 
 | | |
 |---|---|
-| Tritium | 580 t |
+| Tritium | 620 t |
 | Jump range | ~500 ly |
 | Balance | 4,183,180,356 CR |
