@@ -1,7 +1,7 @@
 ---
 title: "Ranks & Standing"
 description: "Pilots Federation and superpower ranks for CMDR Aiether."
-date: 2026-10-31
+date: 2026-11-01
 ---
 
 ## Pilots Federation
