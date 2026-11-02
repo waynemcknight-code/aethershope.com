@@ -26,7 +26,7 @@ date: 2026-11-01
 <text x="503" y="142.8" fill="rgba(255,176,0,.35)" font-size="9" font-family="JetBrains Mono,monospace">40k ly</text>
 <circle cx="500" cy="500" r="442.8" fill="none" stroke="rgba(255,113,0,.13)" stroke-dasharray="3 7"/>
 <text x="503" y="54.2" fill="rgba(255,176,0,.35)" font-size="9" font-family="JetBrains Mono,monospace">50k ly</text>
-<line x1="502.0" y1="535.4" x2="501.9" y2="535.3" stroke="#ff7100" stroke-width="1.4" stroke-dasharray="5 4" opacity=".8"/>
+<line x1="501.7" y1="526.5" x2="501.9" y2="526.4" stroke="#ff7100" stroke-width="1.4" stroke-dasharray="5 4" opacity=".8"/>
 <circle cx="499.8" cy="729.4" r="4.5" fill="#7fe0ff" filter="url(#glow)"/>
 <text x="510.8" y="733.4" fill="#7fe0ff" font-size="13" font-family="Orbitron,sans-serif" text-anchor="start" letter-spacing="1" style="paint-order:stroke;stroke:#02020a;stroke-width:3px">Sol</text>
 <circle cx="415.4" cy="553.9" r="4.5" fill="#ffb000" filter="url(#glow)"/>
@@ -35,40 +35,40 @@ date: 2026-11-01
 <text x="511.0" y="504.0" fill="#ff5555" font-size="13" font-family="Orbitron,sans-serif" text-anchor="start" letter-spacing="1" style="paint-order:stroke;stroke:#02020a;stroke-width:3px">Sagittarius A*</text>
 <circle cx="489.9" cy="151.4" r="4.5" fill="#c08bff" filter="url(#glow)"/>
 <text x="500.9" y="155.4" fill="#c08bff" font-size="13" font-family="Orbitron,sans-serif" text-anchor="start" letter-spacing="1" style="paint-order:stroke;stroke:#02020a;stroke-width:3px">Beagle Point</text>
-<circle cx="502.0" cy="535.4" r="6.0" fill="#ff7100" filter="url(#glow)"/>
-<circle cx="502.0" cy="535.4" r="8" fill="none" stroke="#ff7100" stroke-width="1.2" opacity=".7"><animate attributeName="r" values="7;20;7" dur="3s" repeatCount="indefinite"/><animate attributeName="opacity" values=".7;0;.7" dur="3s" repeatCount="indefinite"/></circle>
-<line x1="502.0" y1="535.4" x2="509.7" y2="516.4" stroke="#ff7100" stroke-width=".8" opacity=".55"/>
-<text x="513.0" y="523.4" fill="#ff7100" font-size="13" font-family="Orbitron,sans-serif" text-anchor="start" letter-spacing="1" style="paint-order:stroke;stroke:#02020a;stroke-width:3px">Your ship</text>
-<circle cx="501.9" cy="535.3" r="6.0" fill="#7CFF6B" filter="url(#glow)"/>
-<circle cx="501.9" cy="535.3" r="8" fill="none" stroke="#7CFF6B" stroke-width="1.2" opacity=".7"><animate attributeName="r" values="7;20;7" dur="3s" repeatCount="indefinite"/><animate attributeName="opacity" values=".7;0;.7" dur="3s" repeatCount="indefinite"/></circle>
-<line x1="501.9" y1="535.3" x2="509.6" y2="556.3" stroke="#7CFF6B" stroke-width=".8" opacity=".55"/>
-<text x="512.9" y="557.3" fill="#7CFF6B" font-size="13" font-family="Orbitron,sans-serif" text-anchor="start" letter-spacing="1" style="paint-order:stroke;stroke:#02020a;stroke-width:3px">Aether's Hope</text>
+<circle cx="501.7" cy="526.5" r="6.0" fill="#ff7100" filter="url(#glow)"/>
+<circle cx="501.7" cy="526.5" r="8" fill="none" stroke="#ff7100" stroke-width="1.2" opacity=".7"><animate attributeName="r" values="7;20;7" dur="3s" repeatCount="indefinite"/><animate attributeName="opacity" values=".7;0;.7" dur="3s" repeatCount="indefinite"/></circle>
+<line x1="501.7" y1="526.5" x2="509.4" y2="507.5" stroke="#ff7100" stroke-width=".8" opacity=".55"/>
+<text x="512.7" y="514.5" fill="#ff7100" font-size="13" font-family="Orbitron,sans-serif" text-anchor="start" letter-spacing="1" style="paint-order:stroke;stroke:#02020a;stroke-width:3px">Your ship</text>
+<circle cx="501.9" cy="526.4" r="6.0" fill="#7CFF6B" filter="url(#glow)"/>
+<circle cx="501.9" cy="526.4" r="8" fill="none" stroke="#7CFF6B" stroke-width="1.2" opacity=".7"><animate attributeName="r" values="7;20;7" dur="3s" repeatCount="indefinite"/><animate attributeName="opacity" values=".7;0;.7" dur="3s" repeatCount="indefinite"/></circle>
+<line x1="501.9" y1="526.4" x2="509.6" y2="547.4" stroke="#7CFF6B" stroke-width=".8" opacity=".55"/>
+<text x="512.9" y="548.4" fill="#7CFF6B" font-size="13" font-family="Orbitron,sans-serif" text-anchor="start" letter-spacing="1" style="paint-order:stroke;stroke:#02020a;stroke-width:3px">Aether's Hope</text>
 <rect x="706" y="706" width="268" height="268" fill="#04040c" fill-opacity=".92" stroke="rgba(255,113,0,.45)"/>
 <text x="716" y="724" fill="#ffb000" font-size="10" font-family="Orbitron,sans-serif" letter-spacing="2">LOCAL DETAIL</text>
-<line x1="901.1" y1="876.3" x2="778.9" y2="819.7" stroke="#ff7100" stroke-width="1.2" stroke-dasharray="4 3" opacity=".85"/>
-<circle cx="901.1" cy="876.3" r="5" fill="#ff7100" filter="url(#glow)"/>
-<circle cx="778.9" cy="819.7" r="5" fill="#7CFF6B" filter="url(#glow)"/>
-<text x="901.1" y="865.3" fill="#ff7100" font-size="11" font-family="Orbitron,sans-serif" text-anchor="middle">YOU</text>
-<text x="778.9" y="839.7" fill="#7CFF6B" font-size="11" font-family="Orbitron,sans-serif" text-anchor="middle">CARRIER</text>
-<text x="840" y="960" fill="#e6d5c4" font-size="14" font-family="JetBrains Mono,monospace" text-anchor="middle">19 ly apart</text>
+<line x1="792.1" y1="875.0" x2="887.9" y2="821.0" stroke="#ff7100" stroke-width="1.2" stroke-dasharray="4 3" opacity=".85"/>
+<circle cx="792.1" cy="875.0" r="5" fill="#ff7100" filter="url(#glow)"/>
+<circle cx="887.9" cy="821.0" r="5" fill="#7CFF6B" filter="url(#glow)"/>
+<text x="792.1" y="864.0" fill="#ff7100" font-size="11" font-family="Orbitron,sans-serif" text-anchor="middle">YOU</text>
+<text x="887.9" y="841.0" fill="#7CFF6B" font-size="11" font-family="Orbitron,sans-serif" text-anchor="middle">CARRIER</text>
+<text x="840" y="960" fill="#e6d5c4" font-size="14" font-family="JetBrains Mono,monospace" text-anchor="middle">25 ly apart</text>
 <text x="14" y="986" fill="rgba(230,213,196,.4)" font-size="10" font-family="JetBrains Mono,monospace">top-down galactic plane (X / Z) &#183; centred on Sgr A* &#183; rings measured from the core</text>
 </svg>
 
 ## Current position
 
-**Shrogea XC-Z c27-1328** &mdash; `[250.5, 2.7, 21907.8]`
+**Dumbooe VL-L c21-2223** &mdash; `[218.7, -21.8, 22905.8]`
 
 ## Distance from landmarks
 
 | Landmark | Distance |
 |---|---|
-| **Sol** | 21,909 ly |
-| **Colonia** | 10,045 ly |
-| **Sagittarius A*** | 3,999 ly |
-| **Beagle Point** | 43,384 ly |
+| **Sol** | 22,907 ly |
+| **Colonia** | 10,268 ly |
+| **Sagittarius A*** | 3,000 ly |
+| **Beagle Point** | 42,385 ly |
 
 ## Fleet carrier
 
-**Aether's Hope** was last confirmed in **Shrogea XC-Z c27-1328**, **19 ly** away.
+**Aether's Hope** was last confirmed in **Dumbooe VL-L c21-2223**, **25 ly** away.
 
 Carrier position only updates when the game reports it &mdash; on load, when docking there, or when a jump completes while aboard &mdash; so it can lag reality while flying elsewhere.
